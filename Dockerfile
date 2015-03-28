@@ -15,5 +15,6 @@ RUN apt-get update; apt-get install -y net-tools
 # PORTS_FROM_HOST 9998 9998/udp
 # PORTS_FROM_HOST 9999 9999
 # PORTS_FROM_HOST 9999 9999/udp
-ADD start.sh /start.sh
+ADD ./start.sh /start.sh
+RUN chmod 755 /start.sh
 ENTRYPOINT "/start.sh"
