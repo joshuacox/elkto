@@ -2,7 +2,7 @@ FROM    pblittle/docker-logstash
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
 RUN apt-get update; apt-get install -y net-tools
-# LINK_SERVICE redis
+# LINK_SERVICE redis elkto_datastore
 # MOUNT_FROM_HOST /exports/elkto/etc/logstash/conf.d /opt/logstash/conf.d
 # PORTS_FROM_HOST 9292 9292
 # PORTS_FROM_HOST 9200 9200
