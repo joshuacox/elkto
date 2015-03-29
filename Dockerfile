@@ -2,6 +2,7 @@ FROM    pblittle/docker-logstash
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
 RUN apt-get update; apt-get install -y net-tools
+# ADD_NAME
 # LINK_SERVICE redis elkto_datastore
 # MOUNT_FROM_HOST /exports/elkto/etc/logstash/conf.d /opt/logstash/conf.d
 # MOUNT_FROM_HOST /exports/elkto/etc/logstash/template.d /etc/logstash/template.d
