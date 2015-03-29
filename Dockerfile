@@ -3,14 +3,11 @@ MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
 RUN apt-get update; apt-get install -y net-tools
 # ADD_NAME
-# LINK_SERVICE redis elkto_datastore
+# xLINK_SERVICE redis elkto_datastore
+# LINK_SERVICE es elsastico
 # MOUNT_FROM_HOST /exports/elkto/etc/logstash/conf.d /opt/logstash/conf.d
 # MOUNT_FROM_HOST /exports/elkto/etc/logstash/template.d /etc/logstash/template.d
 # PORTS_FROM_HOST 9292 9292
-# PORTS_FROM_HOST 9200 9200
-# PORTS_FROM_HOST 9200 9200/udp
-# PORTS_FROM_HOST 9300 9300
-# PORTS_FROM_HOST 9300 9300/udp
 # PORTS_FROM_HOST 9997 9997
 # PORTS_FROM_HOST 9997 9997/udp
 # PORTS_FROM_HOST 9998 9998
