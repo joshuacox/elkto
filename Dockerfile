@@ -1,4 +1,4 @@
-FROM    pblittle/docker-logstash
+FROM joshuacox/icingash
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
 RUN apt-get update; apt-get install -y net-tools nsca
