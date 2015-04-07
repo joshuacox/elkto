@@ -1,7 +1,7 @@
 FROM joshuacox/icingash
 MAINTAINER Josh Cox <josh 'at' webhosting coop>
 
-RUN apt-get update; apt-get install -y net-tools nsca
+RUN apt-get update; apt-get install -y net-tools nsca icinga2
 # xLINK_SERVICE redis elkto_datastore
 # LINK_SERVICE es elastico
 # MOUNT_FROM_HOST /exports/elkto/etc/logstash/conf.d /opt/logstash/conf.d
